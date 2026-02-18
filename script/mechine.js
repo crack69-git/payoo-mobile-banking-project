@@ -13,3 +13,16 @@ function setBalance(newBalance) {
     const balanceElement = document.getElementById("balance");
     balanceElement.innerText = newBalance;
 }
+
+function showOnly(id) {
+    const addmoney = document.getElementById("add-money");
+    const cashout = document.getElementById("cashout");
+    // console.log(`add money- ${addmoney}, cashout- ${cashout}`);
+    addmoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+
+
+
+}
